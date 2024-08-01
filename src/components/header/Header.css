@@ -1,0 +1,28 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.7254901961);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.navbar {
+  border: 1px solid gold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__collection {
+  display: flex;
+  gap: 45px;
+}
+.navbar__select {
+  border: none;
+  outline: none;
+  align-items: center;
+  font-size: 500;
+}/*# sourceMappingURL=Header.css.map */
