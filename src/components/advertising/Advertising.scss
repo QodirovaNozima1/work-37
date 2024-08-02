@@ -1,0 +1,107 @@
+.advertising{
+    background:rgba(247, 248, 250, 1);
+    padding-top: 133px;
+    padding-bottom: 50px;
+    &__box{
+        display: flex;
+        gap: 30px;
+    }
+    &__desc{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 10px;
+        align-items: start;
+        h2{
+            font-size: 49px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+    }
+    .green{
+        color: rgba(86, 178, 128, 1);
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+    .picks{
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+    }
+    &__content{
+        display: flex;
+    }
+    &__btn{
+        width: 194px;
+        height: 40px;
+        border: none;
+        background: rgba(86, 178, 128, 1);
+        color: white;
+        font-size: 18px;
+        transition: .3s;
+        border-radius: 4px;
+        margin-top: 50px;
+        &:hover{
+            box-shadow: 10px 0 40px 10px rgb(183, 247, 211);
+        }
+    }
+    &__img{
+        width: 50%;
+        img{
+            width: 100%;
+        }
+    }
+}
+@media(max-width:990px){
+    .advertising{
+        &__box{
+            display: flex;
+            flex-direction: column;
+        }
+        &__desc{
+            width: 100%;
+        }
+        &__img{
+            width: 100%;
+        }
+    }
+}
+@media(max-width:700px){
+    .advertising{
+        padding-top: 40px;
+        padding-bottom: 20px;
+        &__box{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        &__content{
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        &__desc{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2{
+                font-size: 36px;
+            }
+        }
+        &__btn{
+            width: 120px;
+        }
+        
+    }
+    .picks{
+        font-size: 16px;
+        display: flex;
+        border: 1px solid gainsboro;
+        box-shadow: 0 0 20px 0 gainsboro;
+        border-radius: 10px;
+        gap: 5px;
+        padding-left: 10px;
+        padding: 10px;
+    }
+}

@@ -6,22 +6,97 @@
     background: #ffffffb9;
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
-    margin-top: 20px;
+    height: 75px;
     padding: 10px;
+    padding-top: 20px;
 }
 .navbar{
-    border: 1px solid gold;
     display: flex;
     align-items: center;
     justify-content: space-between;
     &__collection{
         display: flex;
         gap: 45px;
+        align-items: center;
+        li{
+            color: black;
+            font-weight: 500;
+            transition: .5s;
+        &:hover{
+            color:rgba(86, 178, 128, 1);
+        }
+        }
     }
     &__select{
         border: none;
         outline: none;
         align-items: center;
-        font-size: 500;
+        font-weight: 500;
+        font-size: 16px;
+        transition: .5s;
+        &:hover{
+            color:rgba(86, 178, 128, 1);
+        }
+    }
+    &__icon{
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+        transition: .5s;
+        &:hover{
+            color:rgba(86, 178, 128, 1);
+        }
+    }
+    &__menu{
+        display: none;
+    }
+}
+
+@media(max-width:990px){
+    .sidebar{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(237, 243, 240, 0.912);
+        width: 200px;
+        padding: 20px;
+        height: 800px;
+        transition: .5s;
+    }
+    .sidebar.show{
+        display: flex;
+    }
+    .navbar{
+        &__collection{
+            padding-top: 40px;
+            padding-left: 40px;
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        &__item{
+            width: 80px;
+            span{
+                color: rgb(33, 32, 32);
+                transition: .3s;
+        &:hover{
+            color:rgba(86, 178, 128, 1);
+        }
+            }
+        }
+        &__menu{
+            display: block;
+            font-size: 24px;
+        }
+        &__icon{
+            display: none;
+        }
+        &__select{
+            background: transparent;
+            color:  rgb(44, 44, 44);
+            font-weight: 600;
+        }
     }
 }
